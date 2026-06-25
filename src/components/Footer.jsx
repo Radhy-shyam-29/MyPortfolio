@@ -32,7 +32,7 @@ export default function Footer() {
                 fontFamily: "'Fira Code', monospace",
               }}>R</div>
               <span style={{ fontFamily: "'Fira Code', monospace", fontWeight: 700, fontSize: '0.95rem', color: 'var(--c-t1)' }}>
-                Radhy<span style={{ color: 'var(--c-red)' }}>.</span>
+                Radhy shyam<span style={{ color: 'var(--c-red)' }}>.</span>
               </span>
             </div>
           </Link>

@@ -66,7 +66,7 @@ export default function Navbar() {
               color: 'var(--c-t1)',
               letterSpacing: '-0.02em',
             }}>
-              Radhy<span style={{ color: 'var(--c-red)' }}>.</span>
+              Radhy Shyam<span style={{ color: 'var(--c-red)' }}>.</span>
             </span>
           </motion.div>
         </Link>

@@ -737,6 +737,18 @@ body {
   box-shadow: 0 4px 14px rgba(246,36,64,0.2);
 }
 
+/* ══════════════════════════════════════════════════════════════
+   MOBILE RESPONSIVE FIXES
+══════════════════════════════════════════════════════════════ */
+@media (max-width: 640px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+  .exp-card {
+    padding: 1.1rem 1rem !important;
+  }
+}
+
 /* Photo frame effect */
 .photo-frame {
   position: relative;

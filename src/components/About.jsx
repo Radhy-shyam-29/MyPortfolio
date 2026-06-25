@@ -69,7 +69,7 @@ export default function About() {
               </div>
 
               {/* Stats */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: '0.75rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(110px, 1fr))', gap: '0.75rem' }}>
                 {stats.map(({ value, label, icon: Icon }) => (
                   <div key={label} className="stat-card">
                     <Icon size={17} style={{ color: 'var(--c-red)', margin: '0 auto 0.4rem' }} />

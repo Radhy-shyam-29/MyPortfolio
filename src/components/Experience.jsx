@@ -14,7 +14,6 @@ export default function Experience() {
 
           {/* Header */}
           <motion.div variants={fadeUp}>
-            <span className="section-eyebrow">04. Experience</span>
             <h2 className="section-title">Experience</h2>
             <span className="section-rule" />
           </motion.div>

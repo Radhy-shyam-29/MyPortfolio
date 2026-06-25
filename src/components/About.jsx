@@ -21,7 +21,6 @@ export default function About() {
 
           {/* Header */}
           <motion.div variants={fadeUp}>
-            <span className="section-eyebrow">01. About</span>
             <h2 className="section-title">About Me</h2>
             <span className="section-rule" />
           </motion.div>
@@ -31,19 +30,17 @@ export default function About() {
             {/* Photo */}
             <motion.div variants={slideLeft} style={{ display: 'flex', justifyContent: 'center' }}>
               <div className="photo-frame">
-                <div style={{
-                  width: 280, height: 320, borderRadius: 22,
-                  backgroundColor: '#ffffff',
-                  border: '1.5px solid var(--c-b1)',
-                  boxShadow: 'var(--sh-lg)',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  flexDirection: 'column', gap: '0.75rem', userSelect: 'none',
-                }}>
-                  <span style={{ fontSize: '5rem', lineHeight: 1 }}>👨‍💻</span>
-                  <span style={{ fontSize: '0.72rem', color: 'var(--c-t3)', fontFamily: "'Fira Code', monospace" }}>
-                    Your Photo Here
-                  </span>
-                </div>
+                <img
+                  src="/photo.jpg"
+                  alt="Radhy Shyam"
+                  style={{
+                    width: 280, height: 360, borderRadius: 22,
+                    objectFit: 'cover', objectPosition: 'center top',
+                    border: '1.5px solid var(--c-b1)',
+                    boxShadow: 'var(--sh-lg)',
+                    display: 'block',
+                  }}
+                />
               </div>
             </motion.div>
 

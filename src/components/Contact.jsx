@@ -6,9 +6,9 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { fadeUp, slideLeft, slideRight, staggerContainer } from '../utils/animations'
 
 const socials = [
-  { icon: FiGithub,   label: 'GitHub',   url: 'https://github.com/radhyshyam',            sub: '@radhyshyam' },
-  { icon: FiLinkedin, label: 'LinkedIn', url: 'https://linkedin.com/in/radhyshyam',        sub: 'linkedin.com/in/radhyshyam' },
-  { icon: FiMail,     label: 'Email',    url: 'mailto:radhy2929@gmail.com',                sub: 'radhy2929@gmail.com' },
+  { icon: FiGithub,   label: 'GitHub',   url: 'https://github.com/Radhy-shyam-29',                        sub: '@Radhy-shyam-29' },
+  { icon: FiLinkedin, label: 'LinkedIn', url: 'https://www.linkedin.com/in/radhy-shyam-914a8634b/',        sub: 'linkedin.com/in/radhy-shyam' },
+  { icon: FiMail,     label: 'Email',    url: 'mailto:sradhy6@gmail.com',                                  sub: 'sradhy6@gmail.com' },
 ]
 
 const fields = [
@@ -28,7 +28,7 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const { name, email, subject, message } = form
-    window.open(`mailto:radhy2929@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name}\nEmail: ${email}\n\n${message}`)}`)
+    window.open(`mailto:sradhy6@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`From: ${name}\nEmail: ${email}\n\n${message}`)}`)
     setSent(true)
     setTimeout(() => { setSent(false); setForm({ name: '', email: '', subject: '', message: '' }) }, 4000)
   }
@@ -40,7 +40,6 @@ export default function Contact() {
 
           {/* Header */}
           <motion.div variants={fadeUp}>
-            <span className="section-eyebrow">05. Contact</span>
             <h2 className="section-title">Get In Touch</h2>
             <span className="section-rule" />
           </motion.div>

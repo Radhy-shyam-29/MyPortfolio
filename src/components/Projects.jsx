@@ -18,7 +18,6 @@ export default function Projects() {
 
           {/* Header */}
           <motion.div variants={fadeUp}>
-            <span className="section-eyebrow">03. Projects</span>
             <h2 className="section-title">Projects</h2>
             <span className="section-rule" />
           </motion.div>
@@ -58,16 +57,18 @@ export default function Projects() {
                       {project.title}
                     </h3>
                     <div style={{ display: 'flex', gap: '0.5rem', flexShrink: 0 }}>
-                      {[{ href: project.github, Icon: FiGithub }, { href: project.live, Icon: FiExternalLink }].map(({ href, Icon }) => (
-                        <a
-                          key={href}
-                          href={href} target="_blank" rel="noopener noreferrer"
-                          className="social-btn"
-                          style={{ width: 34, height: 34, borderRadius: '10px' }}
-                        >
-                          <Icon size={14} />
-                        </a>
-                      ))}
+                      {[{ href: project.github, Icon: FiGithub }, { href: project.live, Icon: FiExternalLink }]
+                        .filter(({ href }) => href)
+                        .map(({ href, Icon }) => (
+                          <a
+                            key={href}
+                            href={href} target="_blank" rel="noopener noreferrer"
+                            className="social-btn"
+                            style={{ width: 34, height: 34, borderRadius: '10px' }}
+                          >
+                            <Icon size={14} />
+                          </a>
+                        ))}
                     </div>
                   </div>
 
@@ -87,7 +88,7 @@ export default function Projects() {
 
           {/* GitHub link */}
           <motion.div variants={fadeUp} style={{ textAlign: 'center', marginTop: '3.5rem' }}>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Radhy-shyam-29" target="_blank" rel="noopener noreferrer">
               <button className="btn-ghost">
                 <FiGithub size={15} />
                 View all projects on GitHub

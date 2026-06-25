@@ -90,7 +90,7 @@ export default function Hero() {
             fontFamily: "'Fira Code', monospace", fontSize: '0.85rem',
             color: 'var(--c-t3)', letterSpacing: '0.1em', marginBottom: '0.75rem',
           }}>
-            {'< Hello World />'}
+            {'< Love_Coding />'}
           </motion.p>
 
           {/* Name */}
@@ -138,18 +138,20 @@ export default function Hero() {
                 <HiArrowRight size={15} />
               </button>
             </Link>
-            <button className="btn-outline">
-              <HiDownload size={15} />
-              <span>Download CV</span>
-            </button>
+            <a href="/Radhy_Shyam_CV.pdf" download="Radhy_Shyam_CV.pdf" style={{ textDecoration: 'none' }}>
+              <button className="btn-outline">
+                <HiDownload size={15} />
+                <span>Download CV</span>
+              </button>
+            </a>
           </motion.div>
 
           {/* Social row */}
           <motion.div variants={item} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.75rem' }}>
-            <a href="https://github.com/radhyshyam" target="_blank" rel="noopener noreferrer" className="social-btn">
+            <a href="https://github.com/Radhy-shyam-29" target="_blank" rel="noopener noreferrer" className="social-btn">
               <FiGithub size={17} />
             </a>
-            <a href="https://linkedin.com/in/radhyshyam" target="_blank" rel="noopener noreferrer" className="social-btn">
+            <a href="https://www.linkedin.com/in/radhy-shyam-914a8634b/" target="_blank" rel="noopener noreferrer" className="social-btn">
               <FiLinkedin size={17} />
             </a>
           </motion.div>

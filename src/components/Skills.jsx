@@ -17,7 +17,6 @@ export default function Skills() {
 
           {/* Header */}
           <motion.div variants={fadeUp}>
-            <span className="section-eyebrow">02. Skills</span>
             <h2 className="section-title">Skills &amp; Technologies</h2>
             <span className="section-rule" />
           </motion.div>

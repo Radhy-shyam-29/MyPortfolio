@@ -5,8 +5,8 @@ export const projects = [
     description:
       'A responsive educational web platform built with React.js. Features reusable UI components, REST API integration via Fetch API for dynamic content rendering, and responsive layouts with Flexbox and CSS Grid for seamless multi-device experience.',
     tech: ['React.js', 'JavaScript', 'CSS3', 'REST APIs', 'Fetch API', 'Git'],
-    github: 'https://github.com/radhyshyam',
-    live: 'https://careercoded.vercel.app',
+    github: null,
+    live: 'https://www.careercoded.com/',
     featured: true,
   },
   {
@@ -15,8 +15,8 @@ export const projects = [
     description:
       'Designed and developed a responsive personal portfolio showcasing projects, technical skills, certifications, and professional profile. Built with React.js using reusable components and smooth animations. Deployed on Vercel with GitHub CI integration.',
     tech: ['React.js', 'Vite', 'Framer Motion', 'CSS3', 'Vercel'],
-    github: 'https://github.com/radhyshyam',
-    live: 'https://radhyshyam.vercel.app',
+    github: 'https://github.com/Radhy-shyam-29/MyPortfolio.git',
+    live: 'https://radhy-portfolio.vercel.app/',
     featured: true,
   },
 ]

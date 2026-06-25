@@ -72,7 +72,7 @@ export default function Contact() {
             {/* Right — Form */}
             <motion.div variants={slideRight}>
               <div style={{
-                background: '#ffffff',
+                background: 'var(--c-surface)',
                 border: '1.5px solid var(--c-b1)',
                 borderRadius: '22px',
                 padding: '2rem',

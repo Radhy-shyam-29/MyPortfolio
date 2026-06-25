@@ -1,7 +1,7 @@
 export const skills = [
   // Frontend
   { name: 'HTML5',         icon: 'SiHtml5',            color: '#E34F26', category: 'Frontend' },
-  { name: 'CSS3',          icon: 'SiCss3',             color: '#1572B6', category: 'Frontend' },
+  { name: 'CSS3',          icon: 'SiCss',              color: '#1572B6', category: 'Frontend' },
   { name: 'JavaScript',    icon: 'SiJavascript',       color: '#F7DF1E', category: 'Frontend' },
   { name: 'React.js',      icon: 'SiReact',            color: '#61DAFB', category: 'Frontend' },
   // Backend
@@ -13,7 +13,7 @@ export const skills = [
   // Tools
   { name: 'Git',           icon: 'SiGit',              color: '#F05032', category: 'Tools' },
   { name: 'GitHub',        icon: 'SiGithub',           color: '#333333', category: 'Tools' },
-  { name: 'VS Code',       icon: 'SiVisualstudiocode', color: '#007ACC', category: 'Tools' },
+  { name: 'VS Code',       icon: 'TbBrandVscode',      color: '#007ACC', category: 'Tools' },
   { name: 'Postman',       icon: 'SiPostman',          color: '#FF6C37', category: 'Tools' },
   { name: 'npm',           icon: 'SiNpm',              color: '#CB3837', category: 'Tools' },
   // Learning

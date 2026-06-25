@@ -5,6 +5,7 @@ import { HiSparkles } from 'react-icons/hi'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { fadeUp, staggerContainer } from '../utils/animations'
 import { projects } from '../data/projects'
+import TiltCard from './TiltCard'
 
 export default function Projects() {
   const [showAll, setShowAll] = useState(false)
@@ -48,9 +49,12 @@ export default function Projects() {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.94, transition: { duration: 0.18 } }}
                   transition={{ type: 'spring', damping: 22, stiffness: 90, delay: i * 0.05 }}
-                  className="card"
-                  style={{ padding: '1.75rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}
+                  style={{ display: 'flex' }}
                 >
+                  <TiltCard
+                    className="card"
+                    style={{ padding: '1.75rem', display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%' }}
+                  >
                   {/* Title row */}
                   <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '1rem' }}>
                     <h3 style={{ fontSize: '0.975rem', fontWeight: 800, color: 'var(--c-t1)', lineHeight: 1.35, flex: 1 }}>
@@ -81,6 +85,7 @@ export default function Projects() {
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
                     {project.tech.map((t) => <span key={t} className="tech-badge">{t}</span>)}
                   </div>
+                  </TiltCard>
                 </motion.div>
               ))}
             </AnimatePresence>

@@ -3,6 +3,7 @@ import { Link } from 'react-scroll'
 import { motion } from 'framer-motion'
 import { HiArrowDown, HiDownload, HiArrowRight } from 'react-icons/hi'
 import { FiGithub, FiLinkedin } from 'react-icons/fi'
+import Magnetic from './Magnetic'
 
 const roles = ['Frontend Developer', 'React.js Developer', 'UI/UX Enthusiast', 'Problem Solver']
 
@@ -133,16 +134,20 @@ export default function Hero() {
           {/* CTAs */}
           <motion.div variants={item} style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: '0.9rem', marginBottom: '2.75rem' }}>
             <Link to="projects" smooth duration={700} offset={-70} style={{ cursor: 'pointer' }}>
-              <button className="btn-primary">
-                <span>View My Work</span>
-                <HiArrowRight size={15} />
-              </button>
+              <Magnetic>
+                <button className="btn-primary">
+                  <span>View My Work</span>
+                  <HiArrowRight size={15} />
+                </button>
+              </Magnetic>
             </Link>
             <a href="/Radhy_Shyam_CV.pdf" download="Radhy_Shyam_CV.pdf" style={{ textDecoration: 'none' }}>
-              <button className="btn-outline">
-                <HiDownload size={15} />
-                <span>Download CV</span>
-              </button>
+              <Magnetic>
+                <button className="btn-outline">
+                  <HiDownload size={15} />
+                  <span>Download CV</span>
+                </button>
+              </Magnetic>
             </a>
           </motion.div>
 

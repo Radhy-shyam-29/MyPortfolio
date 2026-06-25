@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
 import { HiMenu, HiX } from 'react-icons/hi'
 import { motion, AnimatePresence } from 'framer-motion'
+import ThemeToggle from './ThemeToggle'
+import Magnetic from './Magnetic'
 
 const navLinks = [
   { label: 'Home',       to: 'home' },
@@ -32,7 +34,7 @@ export default function Navbar() {
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50,
         transition: 'background 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease',
         ...(scrolled ? {
-          background: 'rgba(255,255,255,0.92)',
+          background: 'var(--c-nav-bg)',
           backdropFilter: 'blur(18px)',
           WebkitBackdropFilter: 'blur(18px)',
           borderBottom: '1.5px solid var(--c-b1)',
@@ -84,26 +86,31 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          <ThemeToggle />
           <Link to="contact" smooth duration={650} offset={-70} style={{ cursor: 'pointer' }}>
-            <button className="btn-primary" style={{ padding: '0.55rem 1.5rem', fontSize: '0.8rem' }}>
-              <span>Hire Me</span>
-            </button>
+            <Magnetic>
+              <button className="btn-primary" style={{ padding: '0.55rem 1.5rem', fontSize: '0.8rem' }}>
+                <span>Hire Me</span>
+              </button>
+            </Magnetic>
           </Link>
         </div>
 
-        {/* Mobile hamburger */}
-        <button
-          style={{
-            padding: '0.5rem', borderRadius: '10px',
-            background: 'var(--c-red-dim)', border: '1.5px solid rgba(0,85,218,0.2)',
-            color: 'var(--c-red)', cursor: 'pointer', display: 'flex',
-          }}
-          onClick={() => setMenuOpen((v) => !v)}
-          aria-label="Toggle menu"
-          className="md-hidden"
-        >
-          {menuOpen ? <HiX size={22} /> : <HiMenu size={22} />}
-        </button>
+        {/* Mobile controls */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }} className="md-hidden">
+          <ThemeToggle />
+          <button
+            style={{
+              padding: '0.5rem', borderRadius: '10px',
+              background: 'var(--c-red-dim)', border: '1.5px solid rgba(0,85,218,0.2)',
+              color: 'var(--c-red)', cursor: 'pointer', display: 'flex',
+            }}
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? <HiX size={22} /> : <HiMenu size={22} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile menu */}
@@ -116,7 +123,7 @@ export default function Navbar() {
             transition={{ duration: 0.22, ease: 'easeOut' }}
             style={{
               overflow: 'hidden',
-              background: 'rgba(255,255,255,0.97)',
+              background: 'var(--c-nav-bg)',
               borderTop: '1.5px solid var(--c-b1)',
               backdropFilter: 'blur(16px)',
             }}

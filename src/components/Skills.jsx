@@ -1,9 +1,21 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import * as SiIcons from 'react-icons/si'
+import {
+  SiHtml5, SiCss, SiJavascript, SiReact, SiNodedotjs, SiExpress,
+  SiInsomnia, SiMongodb, SiGit, SiGithub, SiPostman, SiNpm,
+  SiRedux, SiNextdotjs, SiTypescript,
+} from 'react-icons/si'
+import { TbBrandVscode } from 'react-icons/tb'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { fadeUp, staggerContainer, scaleIn } from '../utils/animations'
 import { skills, categories } from '../data/skills'
+
+// Only the icons we actually use — keeps the bundle tiny (no full icon set).
+const iconMap = {
+  SiHtml5, SiCss, SiJavascript, SiReact, SiNodedotjs, SiExpress,
+  SiInsomnia, SiMongodb, SiGit, SiGithub, TbBrandVscode, SiPostman,
+  SiNpm, SiRedux, SiNextdotjs, SiTypescript,
+}
 
 export default function Skills() {
   const [active, setActive] = useState('All')
@@ -34,7 +46,7 @@ export default function Skills() {
           <motion.div layout style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(105px, 1fr))', gap: '0.9rem' }}>
             <AnimatePresence mode="popLayout">
               {filtered.map((skill) => {
-                const Icon = SiIcons[skill.icon]
+                const Icon = iconMap[skill.icon]
                 return (
                   <motion.div
                     key={skill.name}

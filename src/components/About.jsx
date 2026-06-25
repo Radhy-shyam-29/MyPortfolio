@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { slideLeft, slideRight, fadeUp, staggerContainer } from '../utils/animations'
 import { HiCode, HiUsers, HiStar, HiHeart } from 'react-icons/hi'
+import CountUp from './CountUp'
 
 const stats = [
   { value: '1+',   label: 'Yr. Exp.',      icon: HiStar },
@@ -73,7 +74,7 @@ export default function About() {
                 {stats.map(({ value, label, icon: Icon }) => (
                   <div key={label} className="stat-card">
                     <Icon size={17} style={{ color: 'var(--c-red)', margin: '0 auto 0.4rem' }} />
-                    <div className="stat-num">{value}</div>
+                    <div className="stat-num"><CountUp value={value} /></div>
                     <div className="stat-label">{label}</div>
                   </div>
                 ))}

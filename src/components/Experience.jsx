@@ -50,7 +50,7 @@ export default function Experience() {
                     {/* Card */}
                     <div className="exp-card" style={{ padding: '1.5rem 1.75rem' }}>
                       {/* Header */}
-                      <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '0.75rem', marginBottom: '0.9rem', flexWrap: 'wrap' }}>
+                      <div className="exp-header" style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: '0.75rem', marginBottom: '0.9rem' }}>
                         <div>
                           <h3 style={{ fontSize: '0.975rem', fontWeight: 800, color: 'var(--c-t1)', marginBottom: '0.2rem' }}>
                             {exp.title}

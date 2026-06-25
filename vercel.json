@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/((?!Radhy_Shyam_CV\\.pdf).*)", "destination": "/index.html" }
+  ]
+}

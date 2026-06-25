@@ -25,10 +25,10 @@ export default function Footer() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
               <div style={{
                 width: 34, height: 34, borderRadius: 10,
-                background: 'linear-gradient(135deg, #39B1D1, #2389A8)',
+                background: 'linear-gradient(135deg, #0055DA, #0044AE)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 color: '#fff', fontWeight: 900, fontSize: '1rem',
-                boxShadow: '0 4px 14px rgba(57,177,209,0.35)',
+                boxShadow: '0 4px 14px rgba(0,85,218,0.35)',
                 fontFamily: "'Fira Code', monospace",
               }}>R</div>
               <span style={{ fontFamily: "'Fira Code', monospace", fontWeight: 700, fontSize: '0.95rem', color: 'var(--c-t1)' }}>

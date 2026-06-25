@@ -11,7 +11,7 @@ const navLinks = [
 const socials = [
   { icon: FiGithub,   url: 'https://github.com/Radhy-shyam-29',                       label: 'GitHub' },
   { icon: FiLinkedin, url: 'https://www.linkedin.com/in/radhy-shyam-914a8634b/',       label: 'LinkedIn' },
-  { icon: FiMail,     url: 'mailto:sradhy6@gmail.com',                                 label: 'Email' },
+  { icon: FiMail,     url: 'mailto:radhy2929@gmail.com',                               label: 'Email' },
 ]
 
 export default function Footer() {

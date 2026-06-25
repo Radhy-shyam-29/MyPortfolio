@@ -41,7 +41,7 @@ export default function Hero() {
       {/* ── Dot grid ── */}
       <div style={{
         position: 'absolute', inset: 0, pointerEvents: 'none',
-        backgroundImage: 'radial-gradient(circle, rgba(246,36,64,0.14) 1.2px, transparent 1.2px)',
+        backgroundImage: 'radial-gradient(circle, rgba(237,47,80,0.14) 1.2px, transparent 1.2px)',
         backgroundSize: '38px 38px',
         maskImage: 'radial-gradient(ellipse 88% 78% at 50% 50%, black 38%, transparent 100%)',
         WebkitMaskImage: 'radial-gradient(ellipse 88% 78% at 50% 50%, black 38%, transparent 100%)',
@@ -50,26 +50,26 @@ export default function Hero() {
       {/* ── Centre radial glow ── */}
       <div style={{
         position: 'absolute', inset: 0, pointerEvents: 'none',
-        background: 'radial-gradient(ellipse 68% 52% at 50% 44%, rgba(246,36,64,0.06) 0%, transparent 70%)',
+        background: 'radial-gradient(ellipse 68% 52% at 50% 44%, rgba(237,47,80,0.06) 0%, transparent 70%)',
       }} />
 
       {/* ── Floating blobs ── */}
       <div className="float-a" style={{
         position: 'absolute', top: '12%', left: '-6%',
         width: 340, height: 340, borderRadius: '50%', pointerEvents: 'none',
-        background: 'radial-gradient(circle, rgba(246,36,64,0.10) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(237,47,80,0.10) 0%, transparent 70%)',
         filter: 'blur(54px)',
       }} />
       <div className="float-b" style={{
         position: 'absolute', bottom: '14%', right: '-7%',
         width: 420, height: 420, borderRadius: '50%', pointerEvents: 'none',
-        background: 'radial-gradient(circle, rgba(255,229,191,0.35) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(237,47,80,0.06) 0%, transparent 70%)',
         filter: 'blur(68px)',
       }} />
       <div style={{
         position: 'absolute', top: '55%', left: '55%',
         width: 320, height: 320, borderRadius: '50%', pointerEvents: 'none',
-        background: 'radial-gradient(circle, rgba(246,36,64,0.04) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(237,47,80,0.04) 0%, transparent 70%)',
         filter: 'blur(80px)', transform: 'translate(-50%,-50%)',
       }} />
 

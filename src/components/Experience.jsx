@@ -26,7 +26,7 @@ export default function Experience() {
               left: '1.25rem',
               top: 0, bottom: 0,
               width: '1px',
-              background: 'linear-gradient(to bottom, var(--c-red) 0%, rgba(246,36,64,0.06) 100%)',
+              background: 'linear-gradient(to bottom, var(--c-red) 0%, rgba(237,47,80,0.06) 100%)',
             }} />
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
@@ -63,7 +63,7 @@ export default function Experience() {
                           fontSize: '0.7rem', fontFamily: "'Fira Code', monospace", fontWeight: 700,
                           padding: '0.28rem 0.75rem', borderRadius: '8px', flexShrink: 0,
                           background: 'var(--c-bg-3)', color: 'var(--c-red-d)',
-                          border: '1px solid rgba(246,36,64,0.2)',
+                          border: '1px solid rgba(237,47,80,0.2)',
                         }}>
                           {exp.period}
                         </span>
@@ -73,7 +73,7 @@ export default function Experience() {
                       <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', marginBottom: '1rem' }}>
                         {exp.description.map((pt, j) => (
                           <li key={j} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.65rem', fontSize: '0.855rem', color: 'var(--c-t3)', lineHeight: 1.7 }}>
-                            <span style={{ marginTop: '0.55rem', width: '5px', height: '5px', borderRadius: '50%', background: 'linear-gradient(135deg,#F62440,#C9172F)', flexShrink: 0 }} />
+                            <span style={{ marginTop: '0.55rem', width: '5px', height: '5px', borderRadius: '50%', background: 'linear-gradient(135deg,#ED2F50,#C9172F)', flexShrink: 0 }} />
                             {pt}
                           </li>
                         ))}

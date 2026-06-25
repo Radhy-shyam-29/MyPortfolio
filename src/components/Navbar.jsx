@@ -32,11 +32,11 @@ export default function Navbar() {
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 50,
         transition: 'background 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease',
         ...(scrolled ? {
-          background: 'rgba(255,250,243,0.92)',
+          background: 'rgba(255,255,255,0.92)',
           backdropFilter: 'blur(18px)',
           WebkitBackdropFilter: 'blur(18px)',
           borderBottom: '1.5px solid var(--c-b1)',
-          boxShadow: '0 3px 24px rgba(200,80,40,0.08)',
+          boxShadow: '0 3px 24px rgba(0,0,0,0.08)',
         } : {
           background: 'transparent',
         }),
@@ -54,10 +54,10 @@ export default function Navbar() {
             <div style={{
               width: 34, height: 34,
               borderRadius: 10,
-              background: 'linear-gradient(135deg, #F62440, #C9172F)',
+              background: 'linear-gradient(135deg, #ED2F50, #C9172F)',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               color: '#fff', fontWeight: 900, fontSize: '1rem',
-              boxShadow: '0 4px 14px rgba(246,36,64,0.38)',
+              boxShadow: '0 4px 14px rgba(237,47,80,0.38)',
               fontFamily: "'Fira Code', monospace",
             }}>R</div>
             <span style={{
@@ -95,7 +95,7 @@ export default function Navbar() {
         <button
           style={{
             padding: '0.5rem', borderRadius: '10px',
-            background: 'var(--c-red-dim)', border: '1.5px solid rgba(246,36,64,0.2)',
+            background: 'var(--c-red-dim)', border: '1.5px solid rgba(237,47,80,0.2)',
             color: 'var(--c-red)', cursor: 'pointer', display: 'flex',
           }}
           onClick={() => setMenuOpen((v) => !v)}
@@ -116,7 +116,7 @@ export default function Navbar() {
             transition={{ duration: 0.22, ease: 'easeOut' }}
             style={{
               overflow: 'hidden',
-              background: 'rgba(255,250,243,0.97)',
+              background: 'rgba(255,255,255,0.97)',
               borderTop: '1.5px solid var(--c-b1)',
               backdropFilter: 'blur(16px)',
             }}

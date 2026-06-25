@@ -54,10 +54,10 @@ export default function Navbar() {
             <div style={{
               width: 34, height: 34,
               borderRadius: 10,
-              background: 'linear-gradient(135deg, #ED2F50, #C9172F)',
+              background: 'linear-gradient(135deg, #39B1D1, #2389A8)',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               color: '#fff', fontWeight: 900, fontSize: '1rem',
-              boxShadow: '0 4px 14px rgba(237,47,80,0.38)',
+              boxShadow: '0 4px 14px rgba(57,177,209,0.38)',
               fontFamily: "'Fira Code', monospace",
             }}>R</div>
             <span style={{
@@ -95,7 +95,7 @@ export default function Navbar() {
         <button
           style={{
             padding: '0.5rem', borderRadius: '10px',
-            background: 'var(--c-red-dim)', border: '1.5px solid rgba(237,47,80,0.2)',
+            background: 'var(--c-red-dim)', border: '1.5px solid rgba(57,177,209,0.2)',
             color: 'var(--c-red)', cursor: 'pointer', display: 'flex',
           }}
           onClick={() => setMenuOpen((v) => !v)}

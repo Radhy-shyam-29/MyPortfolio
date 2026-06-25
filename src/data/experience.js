@@ -1,0 +1,57 @@
+export const experiences = [
+  {
+    id: 1,
+    type: 'work',
+    title: 'Frontend Developer (Full-Time)',
+    organization: 'Brainy Sensei',
+    period: 'Oct 2025 – Mar 2026',
+    description: [
+      'Developed and maintained responsive web applications using HTML5, CSS3, JavaScript (ES6+), and React.js.',
+      'Built reusable and maintainable UI components following component-based architecture best practices.',
+      'Collaborated with backend developers to integrate REST APIs and display dynamic data efficiently.',
+      'Worked closely with designers to implement responsive, user-friendly interfaces across desktop and mobile.',
+      'Debugged frontend issues, resolved UI inconsistencies, and ensured cross-browser compatibility.',
+      'Participated in sprint discussions, code reviews, and Git-based collaborative development workflows.',
+    ],
+    tech: ['React.js', 'JavaScript', 'HTML5', 'CSS3', 'REST APIs', 'Git'],
+  },
+  {
+    id: 2,
+    type: 'education',
+    title: 'Full Stack Development (Offline)',
+    organization: 'AccioJob, Noida',
+    period: 'Jul 2025 – Present',
+    description: [
+      'Intensive offline program covering full stack development with modern technologies.',
+      'Building real-world full stack web applications from scratch in a collaborative environment.',
+      'Learning scalable application architecture, Redux Toolkit, Next.js, TypeScript, and performance optimization.',
+    ],
+    tech: ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'Next.js'],
+  },
+  {
+    id: 3,
+    type: 'education',
+    title: 'Full Stack Web Development',
+    organization: 'Apna College',
+    period: 'Dec 2024 – May 2025',
+    description: [
+      'Completed a comprehensive full stack web development certification program.',
+      'Covered frontend development, backend engineering, database design, and deployment strategies.',
+      'Built multiple real-world projects applying MERN stack development skills end-to-end.',
+    ],
+    tech: ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Node.js', 'MongoDB'],
+  },
+  {
+    id: 4,
+    type: 'education',
+    title: 'Master of Computer Applications (MCA)',
+    organization: 'Guru Jambheshwar University, Hisar',
+    period: '2021 – 2023',
+    description: [
+      'Graduated with a Master\'s degree in Computer Applications from a recognized state university.',
+      'Core subjects: Data Structures & Algorithms, DBMS, Operating Systems, Computer Networks, Web Development.',
+      'Built strong foundations in programming, software engineering principles, and analytical problem solving.',
+    ],
+    tech: ['C++', 'Java', 'Python', 'SQL', 'HTML', 'CSS'],
+  },
+]

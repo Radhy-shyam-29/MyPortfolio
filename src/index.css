@@ -4,17 +4,17 @@
    DESIGN TOKENS
 ══════════════════════════════════════════════════════════════ */
 :root {
-  /* Brand palette — BookMyAcco inspired */
+  /* Brand palette */
   --c-bg-1:    #FFFFFF;   /* Page background — clean white */
   --c-bg-2:    #F8F9FA;   /* Alternate sections — light gray */
   --c-bg-3:    #F3F4F6;   /* Accent backgrounds — cool gray */
-  --c-red:     #ED2F50;   /* Primary accent — BookMyAcco red */
+  --c-red:     #ED2F50;   /* Primary accent — red */
   --c-red-d:   #C9172F;   /* Darker red — hover states */
   --c-red-l:   #FF4B6E;   /* Lighter red — decorative */
   --c-red-dim: rgba(237, 47, 80, 0.08);
   --c-red-glow:rgba(237, 47, 80, 0.30);
-  --c-navy:    #071326;   /* BookMyAcco dark navy */
-  --c-navy-m:  #175581;   /* BookMyAcco medium navy */
+  --c-navy:    #071326;   /* Dark navy */
+  --c-navy-m:  #175581;   /* Medium navy */
 
   /* Text */
   --c-t1: #0F172A;   /* Primary — cool near-black */
